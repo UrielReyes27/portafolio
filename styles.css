@@ -1,0 +1,236 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente profesional */
+  line-height: 1.6;
+  color: #333; /* Texto oscuro */
+  background-color: #f9f9f9; /* Fondo claro */
+}
+
+/* Sección de presentación (Intro) */
+.intro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #61afef; /* Fondo azul claro */
+  color: #fff; /* Texto blanco */
+  padding: 2rem;
+}
+
+/* Efecto de máquina de escribir */
+.typing-effect {
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden; /* Oculta el texto que se está escribiendo */
+  border-right: 0.15em solid #fff; /* Cursor de máquina de escribir */
+  white-space: nowrap; /* Evita el salto de línea */
+  margin: 0 auto; /* Centra el texto */
+  letter-spacing: 0.15em; /* Espaciado entre letras */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animación del cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+/* Estilos para el texto debajo del nombre */
+.intro-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  opacity: 0; /* Inicialmente oculto */
+  animation: fadeIn 2s ease-in-out 3.5s forwards; /* Aparece después de la animación de escritura */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contenido principal */
+.main-content {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+/* Estilo para las secciones */
+.section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #61afef; /* Azul claro */
+}
+
+/* Estilo para los proyectos */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #e0e0e0; /* Borde sutil */
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #61afef; /* Azul claro */
+}
+
+.project-card p {
+  margin-bottom: 1.5rem;
+  color: #555; /* Texto gris oscuro */
+}
+
+.project-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #61afef; /* Azul claro */
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #4a90e2;
+}
+
+/* Estilo para los conocimientos */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #e0e0e0; /* Borde sutil */
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #98c379; /* Verde claro */
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #61afef; /* Azul claro */
+}
+
+.skill-card ul {
+  list-style-type: none;
+}
+
+.skill-card li {
+  margin-bottom: 0.8rem;
+  color: #555; /* Texto gris oscuro */
+}
+
+/* Estilo para el pie de página (contacto) */
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #61afef; /* Azul claro */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #4a90e2;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .intro-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .intro-content p {
+      font-size: 1.2rem;
+  }
+
+  .skill-card, .project-card {
+      width: 100%;
+  }
+}
