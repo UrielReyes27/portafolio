@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo más claro para mejorar visibilidad */
+    color: #333; /* Texto oscuro para contraste */
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(135deg, #1e90ff, #00c6ff);
+    padding: 40px 20px;
+    font-size: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff; /* Mantener el color blanco en el texto */
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features li i {
+    margin-right: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00c6ff;
+    color: #121212;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1e90ff;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #1e90ff;
+    color: #fff;
+}
+
+.technologies {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    background: #333333; /* Fondo gris oscuro */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.tech-card i {
+    font-size: 3.5rem; /* Tamaño de íconos aumentado */
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    font-size: 1.1rem;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+    background: #00c6ff;
+}
+
+/* Colores para los iconos con buen contraste */
+.fab.fa-html5 {
+    color: #e44d26; /* Rojo HTML5 */
+}
+
+.fab.fa-css3-alt {
+    color: #2965f1; /* Azul CSS3 */
+}
+
+.fab.fa-js {
+    color: #f7df1e; /* Amarillo JavaScript */
+}
+
+.fab.fa-php {
+    color: #2965f1; /* Azul CSS3 */
+    font-size: 4rem; /* Tamaño aumentado del ícono */
+}
+
+.fas.fa-database {
+    color: #00a859; /* Verde Base de Datos */
+}
